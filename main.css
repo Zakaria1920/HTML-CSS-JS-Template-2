@@ -96,35 +96,34 @@ body {
       .toggle {
         display: flex;
         justify-content: space-evenly;
-        .check-cyrcle {
-          display: inline-block;
-          margin-right: 3px;
-          position: relative;
-          width: 14px;
-          height: 14px;
-          border-radius: 50%;
-          border: 1px solid;
-          background-color: white;
-          &::before {
-            content: "";
-            position: absolute;
-            width: 9px;
-            height: 9px;
-            border-radius: inherit;
-            background-color: blue;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-            transform: scale(0);
-            transition: transform 200ms;
-          }
-        }
         label {
-          position: relative;
           cursor: pointer;
           user-select: none;
+          .check-cyrcle {
+            display: inline-block;
+            margin-right: 3px;
+            position: relative;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid;
+            background-color: white;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 9px;
+              height: 9px;
+              border-radius: inherit;
+              background-color: blue;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin: auto;
+              transform: scale(0);
+              transition: transform 200ms;
+            }
+          }
         }
         input {
           display: none;
@@ -215,7 +214,7 @@ body {
 /* Start Landing Page */
 .landing-page {
   min-height: 100vh;
-  background-image: url("/Images/img-1.jpg");
+  background-image: url("./Images/img-1.jpg");
   background-size: cover;
   position: relative;
   .overlay {
