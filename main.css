@@ -214,15 +214,7 @@ body {
 /* Start Landing Page */
 .landing-page {
   min-height: 100vh;
-<<<<<<< HEAD
   background-image: url("./Images/img-1.jpg");
-=======
-<<<<<<< HEAD
-  background-image: url("./Images/img-1.jpg");
-=======
-  background-image: url("../Images/img-1.jpg");
->>>>>>> caf32892e62dda3e57137322803e0799827be699
->>>>>>> d4de793
   background-size: cover;
   position: relative;
   .overlay {
@@ -1020,3 +1012,22 @@ footer {
   }
 }
 /* End Grid System */
+/* .sup {
+  width: 400px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
+  z-index: 2000;
+  img {
+    width: 100%;
+  }
+  .over {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border: 2px solid white;
+    top: 0;
+    left: 0;
+  }
+} */
