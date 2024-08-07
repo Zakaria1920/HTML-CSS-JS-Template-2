@@ -214,7 +214,15 @@ body {
 /* Start Landing Page */
 .landing-page {
   min-height: 100vh;
+<<<<<<< HEAD
   background-image: url("./Images/img-1.jpg");
+=======
+<<<<<<< HEAD
+  background-image: url("./Images/img-1.jpg");
+=======
+  background-image: url("../Images/img-1.jpg");
+>>>>>>> caf32892e62dda3e57137322803e0799827be699
+>>>>>>> d4de793
   background-size: cover;
   position: relative;
   .overlay {
