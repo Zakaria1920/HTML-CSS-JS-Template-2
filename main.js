@@ -260,7 +260,3 @@ images.forEach((image) => {
     });
   });
 });
-// let sup = document.querySelector(".sup");
-// sup.addEventListener("mouseover", () => {
-//   console.log("hello");
-// });
