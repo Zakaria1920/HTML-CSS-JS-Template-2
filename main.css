@@ -12,6 +12,9 @@ body {
   padding-right: 15px;
   margin: auto;
 }
+.clearFix {
+  clear: both;
+}
 /* Start Settings Box */
 .settings-box {
   position: fixed;
@@ -144,8 +147,8 @@ body {
       cursor: pointer;
       display: block;
       font-weight: bold;
-      transition-property: filter background-color;
-      transition-duration: 300ms 300ms;
+      transition-property: filter, background-color;
+      transition-duration: 300ms, 300ms;
       &:active {
         transform: scale(0.98);
       }
@@ -172,6 +175,7 @@ body {
     border: 4px solid var(--main-color);
     margin: 0 auto 11px;
     border-radius: 50%;
+    transition: border-color 300ms;
     cursor: pointer;
     &.active {
       background-color: var(--main-color);
@@ -277,6 +281,7 @@ body {
       transform: scaleY(0);
       transform-origin: top;
       transition: transform 300ms;
+      transition: inherit;
       &.open {
         transform: scaleY(1);
       }
@@ -485,9 +490,6 @@ body {
 }
 /* End Gallery */
 /* Start timeline */
-.clearFix {
-  clear: both;
-}
 .timeline {
   padding-top: 50px;
   padding-bottom: 50px;
