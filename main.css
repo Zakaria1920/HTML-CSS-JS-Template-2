@@ -144,7 +144,8 @@ body {
       cursor: pointer;
       display: block;
       font-weight: bold;
-      transition: filter 300ms;
+      transition-property: filter background-color;
+      transition-duration: 300ms 300ms;
       &:active {
         transform: scale(0.98);
       }
@@ -186,7 +187,7 @@ body {
       padding: 5px 12px;
       transition-property: transform, opacity;
       transition-timing-function: linear, linear;
-      transition-duration: 300ms, 200ms;
+      transition-duration: 200ms, 200ms;
       transform-origin: right;
       transform: scaleX(0);
       opacity: 0.8;
@@ -239,6 +240,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 99;
+    transition: background-color 300ms;
     .logo {
       font-weight: bold;
       flex: 1;

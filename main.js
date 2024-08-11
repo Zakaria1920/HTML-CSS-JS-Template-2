@@ -190,7 +190,7 @@ const landingPage = document.querySelector(".landing-page");
 // Function to change background
 const changeBackground = () => {
   const random = Math.ceil(Math.random() * 5);
-  landingPage.style.backgroundImage = `url(/Images/img-${random}.jpg)`;
+  landingPage.style.backgroundImage = `url(./Images/img-${random}.jpg)`;
 };
 
 // Retrieve and apply background state from localStorage
