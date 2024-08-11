@@ -280,8 +280,8 @@ body {
       border-radius: 5px;
       transform: scaleY(0);
       transform-origin: top;
-      transition: transform 300ms;
-      transition: inherit;
+      transition-property: transform, background-color;
+      transition-duration: 300ms, 300ms;
       &.open {
         transform: scaleY(1);
       }
