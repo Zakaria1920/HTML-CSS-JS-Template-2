@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="#" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="text/normalize.css" />
+    <link rel="stylesheet" href="text/main.css" />
     <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css" />
     <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css" />
     <title>Special Design</title>
@@ -32,16 +32,21 @@
         <div class="option-box">
           <h3>Background</h3>
           <div class="toggle play-background">
-            <input type="radio" name="background" id="one" data-play="on" />
+            <input type="radio" name="background" id="back-on" data-play="on" />
             <div>
-              <label class="on" for="one">
+              <label class="on" for="back-on">
                 <div class="check-cyrcle"></div>
                 On</label
               >
             </div>
-            <input type="radio" name="background" id="two" data-play="off" />
+            <input
+              type="radio"
+              name="background"
+              id="back-off"
+              data-play="off"
+            />
             <div>
-              <label class="off" for="two"
+              <label class="off" for="back-off"
                 ><div class="check-cyrcle"></div>
                 Off</label
               >
@@ -52,16 +57,16 @@
         <div class="option-box">
           <h3>Bullets</h3>
           <div class="toggle show-bullets">
-            <input type="radio" name="toggle" id="three" data-show="on" />
+            <input type="radio" name="toggle" id="show-on" data-show="on" />
             <div>
-              <label class="on" for="three">
+              <label class="on" for="show-on">
                 <div class="check-cyrcle"></div>
                 On</label
               >
             </div>
-            <input type="radio" name="toggle" id="four" data-show="off" />
+            <input type="radio" name="toggle" id="show-off" data-show="off" />
             <div>
-              <label class="off" for="four"
+              <label class="off" for="show-off"
                 ><div class="check-cyrcle"></div>
                 Off</label
               >
@@ -77,26 +82,26 @@
 
     <!-- Start Nav Bullets -->
     <div class="nav-bullets">
-      <div class="bullet">
-        <div class="tooltip" data-section="landing-page">Start</div>
+      <div class="bullet" data-section="landing-page">
+        <div class="tooltip">Start</div>
       </div>
-      <div class="bullet">
-        <div class="tooltip" data-section="about-us">About Us</div>
+      <div class="bullet" data-section="about-us">
+        <div class="tooltip">About Us</div>
       </div>
-      <div class="bullet">
-        <div class="tooltip" data-section="skills">Our Skills</div>
+      <div class="bullet" data-section="skills">
+        <div class="tooltip">Our Skills</div>
       </div>
-      <div class="bullet">
-        <div class="tooltip" data-section="gallery">Our Gallery</div>
+      <div class="bullet" data-section="gallery">
+        <div class="tooltip">Our Gallery</div>
       </div>
-      <div class="bullet">
-        <div class="tooltip" data-section="features">Our Features</div>
+      <div class="bullet" data-section="features">
+        <div class="tooltip">Our Features</div>
       </div>
-      <div class="bullet">
-        <div class="tooltip" data-section="testi">Testimonials</div>
+      <div class="bullet" data-section="testi">
+        <div class="tooltip">Testimonials</div>
       </div>
-      <div class="bullet">
-        <div class="tooltip" data-section="contact">Contact Us</div>
+      <div class="bullet" data-section="contact">
+        <div class="tooltip">Contact Us</div>
       </div>
     </div>
     <!-- End Nav Bullets -->
@@ -109,12 +114,12 @@
         <div class="bar"><span></span><span></span><span></span></div>
         <ul class="links">
           <li class="active" data-section="landing-page">Start</li>
-          <li data-section="about-us">About Us</li>
-          <li data-section="skills">Our Skills</li>
-          <li data-section="gallery">Our Gallery</li>
-          <li data-section="features">Our Features</li>
-          <li data-section="testi">Testimonials</li>
-          <li data-section="contact">Contact Us</li>
+          <li tabindex="0" data-section="about-us">About Us</li>
+          <li tabindex="0" data-section="skills">Our Skills</li>
+          <li tabindex="1" data-section="gallery">Our Gallery</li>
+          <li tabindex="0" data-section="features">Our Features</li>
+          <li tabindex="0" data-section="testi">Testimonials</li>
+          <li tabindex="0" data-section="contact">Contact Us</li>
         </ul>
       </div>
       <div class="introduction">
@@ -441,6 +446,9 @@
     <!-- Start Footer -->
     <footer>Created By Zakaria</footer>
     <!-- End Footer -->
-    <script src="main.js"></script>
+    <!-- <script src="https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js"></script> -->
+    <!-- <script src="https://widget.cloudinary.com/v2.0/global/all.js"></script> -->
+    <!-- <script src="text/img.js"></script> -->
+    <script src="text/main.js"></script>
   </body>
 </html>

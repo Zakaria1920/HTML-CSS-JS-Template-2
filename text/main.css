@@ -180,6 +180,9 @@ body {
     &.active {
       background-color: var(--main-color);
     }
+    &:hover .tooltip {
+      transform: scaleX(1);
+    }
     .tooltip {
       width: 120px;
       text-align: center;
@@ -194,13 +197,6 @@ body {
       transition-duration: 200ms, 200ms;
       transform-origin: right;
       transform: scaleX(0);
-      opacity: 0.8;
-      &.show {
-        transform: scaleX(1);
-      }
-      &:hover {
-        opacity: 1;
-      }
       &::before {
         content: "";
         position: absolute;
@@ -219,7 +215,7 @@ body {
 /* Start Landing Page */
 .landing-page {
   min-height: 100vh;
-  background-image: url("./Images/img-1.jpg");
+  background-image: url("../Images/img-1.jpg");
   background-size: cover;
   position: relative;
   .overlay {
@@ -422,7 +418,7 @@ body {
     }
   }
 }
-/* End skills */
+/* End skillss */
 /* Start Gallery */
 .gallery {
   padding-top: 50px;
@@ -694,7 +690,7 @@ body {
 /* Start Contact Us */
 .contact {
   height: 100vh;
-  background-image: url("Images/contact-us2.jpg");
+  background-image: url("../Images/contact-us2.jpg");
   background-size: cover;
   background-repeat: round;
   position: relative;
